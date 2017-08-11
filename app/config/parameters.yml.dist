@@ -17,3 +17,10 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret: ThisTokenIsNotSoSecretChangeIt
+    
+    index_file: README
+    index_idea: revolter-social-project
+    index_name: info
+    path.web: '%kernel.root_dir%/../web'
+    path.idea: ''
+    path.texts: '%path.web%/texts'

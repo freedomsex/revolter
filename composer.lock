@@ -1203,12 +1203,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/revolter-idealist/idealist-bundle.git",
-                "reference": "58c0eef44799bb6d8ca6ec46fa5a74c984bb493c"
+                "reference": "534bd5e6b995d4006525fb1d956988d5c7bcc526"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/revolter-idealist/idealist-bundle/zipball/58c0eef44799bb6d8ca6ec46fa5a74c984bb493c",
-                "reference": "58c0eef44799bb6d8ca6ec46fa5a74c984bb493c",
+                "url": "https://api.github.com/repos/revolter-idealist/idealist-bundle/zipball/534bd5e6b995d4006525fb1d956988d5c7bcc526",
+                "reference": "534bd5e6b995d4006525fb1d956988d5c7bcc526",
                 "shasum": ""
             },
             "require": {
@@ -1243,7 +1243,7 @@
             ],
             "description": "Бандл для проектов как компонент Symfony. Создает визуальный скелет для текстов. Основа распространения текстов идеи. Совместное редактирование и публикация текстов идей независимых авторов.",
             "homepage": "https://github.com/revolter-idealist/idealist-bundle",
-            "time": "2017-08-10 22:49:44"
+            "time": "2017-08-11 10:42:54"
         },
         {
             "name": "sensio/distribution-bundle",
