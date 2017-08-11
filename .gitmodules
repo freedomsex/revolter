@@ -1,15 +1,15 @@
-[submodule "web/texts/distributed-community"]
-	path = web/texts/distributed-community
-	url = git://github.com/revolter-idealist/distributed-community
-[submodule "web/texts/revolter-social-project"]
-	path = web/texts/revolter-social-project
-	url = git://github.com/revolter-idealist/revolter-social-project
-[submodule "web/texts/method-of-paper-leaflets"]
-	path = web/texts/method-of-paper-leaflets
-	url = git://github.com/revolter-idealist/method-of-paper-leaflets
-[submodule "web/texts/stop-revolution"]
-	path = web/texts/stop-revolution
-	url = git://github.com/revolter-idealist/stop-revolution
 [submodule "web/texts/under-threat"]
 	path = web/texts/under-threat
-	url = git://github.com/freedomsex/under-threat.git
+	url = https://github.com/freedomsex/under-threat
+[submodule "web/texts/stop-revolution"]
+	path = web/texts/stop-revolution
+	url = https://github.com/revolter-idealist/stop-revolution
+[submodule "web/texts/method-of-paper-leaflets"]
+	path = web/texts/method-of-paper-leaflets
+	url = https://github.com/revolter-idealist/method-of-paper-leaflets
+[submodule "web/texts/revolter-social-project"]
+	path = web/texts/revolter-social-project
+	url = https://github.com/revolter-idealist/revolter-social-project
+[submodule "web/texts/distributed-community"]
+	path = web/texts/distributed-community
+	url = https://github.com/revolter-idealist/distributed-community
