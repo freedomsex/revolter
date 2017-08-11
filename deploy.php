@@ -9,26 +9,37 @@ set('git_cache', false);
 
 // Configuration
 
-set('repository', 'https://github.com/revolter-idealist/revolter.git');
+set('repository', 'https://github.com/freedomsex/revolter.git');
 // -- Общие папки
 //set('shared_dirs', array_merge([''], get('shared_dirs')));
 //set('shared_files', []);
 //set('writable_dirs', []);
 
-// Servers
-
+////
+// Servers 
+//   Внимание, не настроен stage по умолчанию (default_stage)
+////
 server('prod', 'domain.com')
     ->user('username')
     ->identityFile()
     ->set('deploy_path', '/var/www/revolter')
     ->stage('prod');
 
-set('default_stage', 'dev');
-set('keep_releases', 5);
-
+// Отдельный файл натроек для dev сервера
 if(file_exists('dep_conf.php')) {
+	set('default_stage', 'dev');
+	set('keep_releases', 5);
 	include('dep_conf.php');
 }
+
+// Ссылка на шаблон base.html.twig 
+// Закомментируйте, если изменяли его
+task('base-html-link', function() { 
+    cd("{{release_path}}/app/Resources/views");
+    run("ln -sf {{release_path}}/vendor/revolter/idealist-bundle/Resources/views/base.html.twig");
+});
+after('deploy:vendors', 'base-html-link');
+
 
 set('composer_command', '/bin/composer.phar');
 set('copy_dirs', ['vendor']);
@@ -48,15 +59,3 @@ after('rollback', 'reload:php7');
 
 
 after('deploy', 'success');
-
-
-// Ссылки на тексты
-//task('text-links', function() {
-//    run("mkdir -p {{release_path}}/web/texts");
-//           cd("{{release_path}}/web/texts");
-//    run("ln -sf {{release_path}}/vendor/revolter-idealist/distributed-community");
-//    run("ln -sf {{release_path}}/vendor/revolter-idealist/method-of-paper-leaflets");
-//    run("ln -sf {{release_path}}/vendor/revolter-idealist/revolter-social-project");
-//    run("ln -sf {{release_path}}/vendor/revolter-idealist/stop-revolution");
-//});
-//after('deploy:vendors', 'text-links');

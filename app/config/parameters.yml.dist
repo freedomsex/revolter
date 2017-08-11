@@ -19,7 +19,7 @@ parameters:
     secret: ThisTokenIsNotSoSecretChangeIt
     
     index_file: README
-    index_idea: revolter-social-project
+    index_idea: under-threat
     index_name: info
     path.web: '%kernel.root_dir%/../web'
     path.idea: ''

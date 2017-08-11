@@ -1,0 +1,14 @@
+<?php
+
+namespace Deployer;
+
+$ipaddr = ''; // INSERT SERVER IP ADDRESS! for example 192.168.122.10
+$deploy_user = 'root';
+set('http_user', 'www-data');
+
+server('dev', $ipaddr)
+    ->user('root')
+    ->identityFile('', '~/.ssh/ids/'.$ipaddr.'/'.$deploy_user.'/id_rsa')
+    ->set('deploy_path', '/var/www/public_html/revolter')
+    ->stage('dev');
+ 
